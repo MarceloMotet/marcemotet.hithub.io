@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #111;
+}
+
+h1 {
+text-align: center;
+color: #f7f2f2;
+}
+
+.circular-progress {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    margin: auto;
+    background: linear-gradient(
+    0deg,
+    #fff 50%,
+    rgba(#fff,.2) 50%
+    );
+    position: relative;
+    transform: rotate(120deg);
+    &:before {
+        content: "HTML5";
+        width: 12rem;
+        height: 12rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: red;
+        border-radius: 50%;
+        padding: .5em;
+        box-sizing: border-box;
+        font-size: 2rem;
+        color: #fff;
+        text-align: center;
+        line-height: 8rem;
+        transform: rotate(-120deg);
+    }
+    &::after {
+        content: "60%";
+        width: 12rem;
+        height: 12rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 50%;
+        background: linear-gradient(
+            transparent 50%,
+            #111 50%
+        )
+        transform: scale(1.1) rotate(-120deg);
+        text-align: center;
+        color: #fff;
+        line-height: 13rem;
+
+    
+    }
+
+}
