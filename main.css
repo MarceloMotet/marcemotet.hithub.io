@@ -1,34 +1,57 @@
-body {
-  background: url(images/33c74013c1d5b411b3fd61c1f89a9144.jpg);
-  background-size: 80%;
-  font-family: 'Libre Baskerville', serif;
-   }
 
+  .inicio.contenido header {
+    padding: 30px;
+  }
+  
+.inicio .contenido header nav {
+position: fixed;
+margin-left: 60px;
+background-color: #8a3535e5;
+padding: 15px;
+border-radius: 10px;
+text-align: left; 
+z-index: 99;
+display: none;
+}
+.inicio.contenido header nav a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 10px;
+  font-weight: bold;
 
+}
   /* Estilo del encabezado */
-#header {
-    background-color: #1A2B42;
+  #header {
+    background-color: #333;
     color: white;
     padding: 20px;
     
   }
   body {
-    background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
+    background-color: #f10e0e;
+    font-family: 'Rubik Iso', cursive;
+  }
+  .alinear_flex {
+    display: flex;
+    justify-content: center;
   }
   
   h1 {
-    color: #3447ec;
+    color: #0505f3;
     text-align: center;
+    font-size: 2.1rem;
+    font-family: 'Rubik Iso';
   }
   
   p {
     font-size: 1.2rem;
     line-height: 1.5;
+    font-family: 'Rubik Iso'
   }
   
   button {
-    background-color: #ece7e4;
+    background-color: #990303;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -39,20 +62,18 @@ body {
     font-size: 40px;
     margin: 0 18px;
     align-self:auto;
-    
+    font-family: 'Source Serif Pro', serif;
   }
-  
-  
-  
+   
   button:hover {
-    background-color: #4565bb;
+    background-color: #bb7045;
   }
   
 button {
 border: 0;
 background-image: linear-gradient(150deg,
- #9500ff,
- #09f,
+ #ff9900,
+ rgb(207, 6, 6),
  #00DDFF);
 border-radius: 6px;
 color: #fff;
@@ -61,6 +82,7 @@ font-size: 18px;
 padding: 4px;
 cursor: pointer;
 transition: 3s;
+font-family: 'Rubik Iso'
 }
 .icon-fa-solid fa-car-side {
   background: rgb(243, 9, 9);
@@ -68,7 +90,7 @@ transition: 3s;
 
 
 button span{
-  background-color: #111;
+  background-color: #070000;
   padding: 16px 24px;
   border-radius: 6px;
   transition: .3s;
@@ -84,15 +106,16 @@ button:hover span{
   
   /* Estilo de las secciones */
   .section {
-    background-color: #F5F5F5;
-    border: 1px solid #ccc;
+    background-color: #db0404f5;
+    border: 1px solid #cccccc;
     padding: 20px;
     margin-top: 30px;
+    font-family: 'Gloock', serif;
   }
   
   /* Estilo de la sección de experiencia */
   #experience {
-    background-color: #4D648D;
+    background-color: #4d6e8d;
     color: white;
 
   }
@@ -112,8 +135,9 @@ button:hover span{
   
   /* Estilo de la sección de habilidades */
   #idiomas {
-    background-color: #0b74eb;
+    background-color: #d0d6dd;
     color: #333;
+    font-family: 'Source Serif Pro', serif;
   }
   #herramientas {
     background-color: #0f9dfc;

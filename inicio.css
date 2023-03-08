@@ -1,9 +1,37 @@
 body {
-    background: url(images/jordi.koalitic\ 2.jpg);
+    background: url(images/33c74013c1d5b411b3fd61c1f89a9144.jpg);
     background-size: 100%;
-    font-family: 'Libre Baskerville', serif;
-     }
+    margin: 0;
+    padding: 0;
+    background: #00060f;
     
+}
+     .nombre {
+        width: 100%;
+        height: 300px;
+        background: #f1e1da;
+
+     }
+     .nombre .content {
+        width: 50%;
+        height: 50%;
+        position: absolute;
+        left: 25%;
+     }
+
+     .nombre .content.p-1 {
+        color: #b80a8c;
+        font-family: 'Gloock', serif;
+        font-weight: bolder;
+        font-size: 65px;
+     }
+     .nombre .content.p-1 {
+        color: #cc6cd3;
+        font-family: 'Climate Crisis', cursive;
+        font-weight: bolder;
+        font-size: 35px;
+        }
+
 .social-bar {
     position: fixed;
     right: 0;
@@ -16,7 +44,7 @@ body {
 }
 
 .icon {
-        color: rgb(248, 249, 250);
+        color: rgb(184, 214, 243);
         text-decoration:none;
         padding: 2rem;
         display: flex;
@@ -37,30 +65,35 @@ body {
   
 
 .icon:first-child {
-    border-radius: 1rem 0 0 0;
+    border-radius: 2rem 0 0 0;
 }
+
 .icon:last-child {
     border-radius: 0 0 0 1rem;
+
 }
+
 .icon:hover {
 padding-right: 3rem;
 border-radius: 1rem 0 0 1rem;
 box-shadow: 0 0 .5rem rgba(0, 0, 0, 0,42);
 } 
-body .icon{
+
+body .icon
+{
     font-size: 20px;
     margin: 0 18px;
     align-self: center;
 }
 .progress-bar-container {
     height: 10px;
-    background-color: #EEE;
+    background-color: #ee0202;
     margin-bottom: 10px;
   }
   
   .progress-bar {
     height: 0%;
-    background-color: #007BFF;
+    background-color: #00ff62;
     transition: width 0.5s ease;
   }
  
