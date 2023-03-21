@@ -1,32 +1,33 @@
+.progress-bar-container {
+  background-color: #DDD;
+  border-radius: 5px;
+  margin: 10px;
+  width: 100%;
 
-html {
-font-size: 0px;
-font-family: Arial, Helvetica, sans-serif;
 }
-
-
-
-progress::-webkit-progress-value {
-    background-color: red;
+.progress-bar {
+  background-color: #4CAF50;
+  border-radius: 5px;
+  height: 20px;
+  width: 0; 
+ }
+ /*anima la barra de progreso */
+@keyframes progress {
+  from {
+    width: 0;
   }
-
-  
-
-  .skills {
-    display: flex;
-    margin-top: 4em;
-    flex-wrap: wrap;
+  to {
+    width: calc(var(--value) * 1%);
   }
-.big-container {
-    background-color: red;
 }
-.container-one {
-    background-color: blue;
-    width: 100px;
-    height: 300px;
+.progress-bar [data-value] {
+  animation: progress 1s linear forwards;
+  --value: 0;
 }
-.container-two {
-    background-color: green;
-    width: 50px;
-    height: 50px;
+/* Agrega el valor de la barra de progreso al atributo --value */
+.progress-bar[data-value="70"]::before {
+  content: "70%";
+  position: absolute;
+  right: 0;
+  top: -25px;
 }

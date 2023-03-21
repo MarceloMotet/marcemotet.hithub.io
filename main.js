@@ -1,28 +1,43 @@
-var menu_visible =false;
-let menu= document.getElementById("nav");
-function MostrarOcultarMenu(){
-  if (menu_visible==false){
-    menu.style.display= "block";
-    menu_visible= true;}
-    else {
-      menu.style.display = "none";
-      menu_visible = "false"
-    
+
+  var formulario = document.getElementById("miFormulario");
+
+formulario.addEventListener("submit", function(event) {
+  event.preventDefault(); // previene la recarga de la página
+
+  var nombres = document.getElementById("nombre").value;
+  var apellidos = document.getElementById("apellido").value;
+  var correo = document.getElementById("correo").value;
+  var comentarios = document.getElementById("comentarios").value;
+ 
+
+  if (nombres === "") {
+    alert("Es obligatorio ingresar su nombre");
+    document.getElementById("nombre").focus();
+  } 
+    else if (apellidos === "") {
+    alert("Es obligatorio ingresar su apellido");
+    document.getElementById("apellido").focus();
   }
-}
-
-
-
-// Seleccionar el botón
-const button = document.querySelector('button');
-
-// Agregar un evento al botón
-button.addEventListener('click', () => {
-  alert('¡Hola! Has hecho clic en el botón.');
+    else if (correo === "") {
+    alert("Es obligatorio ingresar su correo");
+    document.getElementById("correo").focus();
+  }
+    else if (comentarios === "") {
+    alert("Es obligatorio ingresar sus comentarios");
+    document.getElementById("comentarios").focus();        
+  }
+    else {
+    console.log(nombres + " " + apellidos + ", " + correo + ", " + comentarios);
+    document.getElementById("nombre").value = "";
+    document.getElementById("apellido").value = "";
+    document.getElementById("correo").value = "";
+    document.getElementById("comentarios").value = "";
+    document.getElementById("nombre").focus();
+  }
 });
 
+function saludar(nombre,apellido){
+  console.log("Hola "+ nombre+" "+apellido);
+  alert("Bienvenido "+ nombre+" "+apellido);
+}
 
-  progressBars.forEach(bar => {
-    const value = bar.dataset.value;
-    bar.style.width = `${value}%`;
-  });

@@ -1,41 +1,21 @@
-body {
-    background: url(images/33c74013c1d5b411b3fd61c1f89a9144.jpg);
-    background-size: 100%;
-    margin: 0;
-    padding: 0;
-    background: #00060f;
-    
-}
-     .nombre {
-        width: 100%;
-        height: 300px;
-        background: #f1e1da;
-
-     }
-     .nombre .content {
-        width: 50%;
-        height: 50%;
-        position: absolute;
-        left: 25%;
-     }
-
-     .nombre .content.p-1 {
-        color: #b80a8c;
-        font-family: 'Gloock', serif;
-        font-weight: bolder;
-        font-size: 65px;
-     }
-     .nombre .content.p-1 {
-        color: #cc6cd3;
-        font-family: 'Climate Crisis', cursive;
-        font-weight: bolder;
-        font-size: 35px;
-        }
+.alinear_flex img {
+    width: 200px;
+    height: 300px;
+    transition: transform 0.2s ease-out;
+    border: 2px solid #ccc;
+  }
+  
+  .alinear_flex img:hover {
+    transform: scale(1.1);
+    border: 4px solid rgb(214, 7, 7);
+  }
+ 
+  
 
 .social-bar {
     position: fixed;
     right: 0;
-    top: 35%;
+    top: 5%;
     font-size: 1.5rem;
     display: flex;
     flex-direction: column;
@@ -44,14 +24,15 @@ body {
 }
 
 .icon {
-        color: rgb(184, 214, 243);
+        color: rgb(195, 197, 230);
         text-decoration:none;
         padding: 2rem;
         display: flex;
         transition: all.5s;
     }
 .icon-linkedin {
-    background:#1c12a7;
+    background: rgb(37, 69, 175)  ;
+    
 }
 .icon-instagram {
     background:#f81e0e;
@@ -85,15 +66,11 @@ body .icon
     margin: 0 18px;
     align-self: center;
 }
-.progress-bar-container {
-    height: 10px;
-    background-color: #ee0202;
-    margin-bottom: 10px;
-  }
-  
-  .progress-bar {
-    height: 0%;
-    background-color: #00ff62;
-    transition: width 0.5s ease;
-  }
- 
+
+
+
+
+
+
+
+

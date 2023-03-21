@@ -1,96 +1,419 @@
 
-  .inicio.contenido header {
-    padding: 30px;
-  }
-  
-.inicio .contenido header nav {
-position: fixed;
-margin-left: 60px;
-background-color: #8a3535e5;
-padding: 15px;
-border-radius: 10px;
-text-align: left; 
-z-index: 99;
-display: none;
-}
-.inicio.contenido header nav a {
-  display: block;
-  color: #fff;
-  text-decoration: none;
-  margin-bottom: 10px;
-  font-weight: bold;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 
 }
-  /* Estilo del encabezado */
-  #header {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    
-  }
+
   body {
-    background-color: #f10e0e;
-    font-family: 'Rubik Iso', cursive;
+    background: url(images/glass.jpg);
+    background-size: 100%;
+    padding: 10px 10px 0;
+    background-size: none;
+    background-repeat:no-repeat;
+    margin: none;
   }
-  .alinear_flex {
+  .welcome {
+    background-image: url("images/desk.jpg");
+    background-size: cover;
+    height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    color: rgb(5, 95, 179);
+    font-family: 'Franklin Gothic Medium';
+    font-weight: bold;
   }
   
-  h1 {
-    color: #0505f3;
+  
+  /* Estilo del encabezado */
+  .header { 
+    color: rgb(48, 5, 150);
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
     text-align: center;
-    font-size: 2.1rem;
-    font-family: 'Rubik Iso';
   }
   
-  p {
-    font-size: 1.2rem;
-    line-height: 1.5;
-    font-family: 'Rubik Iso'
-  }
-  
-  button {
-    background-color: #990303;
-    color: #fff;
+  nav { 
+  height: 90px;
+  width: 100%;    
+  background: rgb(0, 51, 51);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+label.logo {
+  font-size: 60px;
+  font-weight:bold;
+  color: #f5eeee;
+  line-height: 80px;
+}
+
+nav ul {
+  float: right;
+  margin-right: 40px;
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 10px;
+}
+
+nav a {
+    color: #f2f1f5;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 1px  solid  transparent;
+    padding: 7px 10px;
+    border-radius: 3px;
+}
+a.active,a:hover {
+  border: 1pxsolid #eeedf5;
+  transition: .5s;
+}
+
+nav a:hover,
+nav a:focus {
+    text-decoration: underline;
+    color: #e90202;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.portfolio-link {
+    background: url(images/glass.jpg);
+    display: inline-block;
+    border: 2px solid #1d1212;
     padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
+    margin-top: 30px;
+    font-size: 1.5em;
+    color: #2409bb;
+    text-decoration:none;
+}
+.portfolio-link:hover,
+.portfolio-link:focus {
+    background-color: hsl(0, 89%, 50%);
+    color: #f30c0c;
+    background: url(images/jordi.koalitic\ 2.jpg);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .contenedor {
+    background: linear-gradient(rgba(238, 229, 229, 0.3)(rgba(161, 204, 41, 0.3)));
+    padding: 20px;
+    display: flex;
+    justify-content:left;
+  }
+  .boton {
+    background-color: rgb(240, 16, 16) tr;
+    border-radius: 50px;
+    font-size: 14px;
+    font-style: italic;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
     cursor: pointer;
+    transition: .3s;
   }
-  #body i {
-    font-size: 40px;
-    margin: 0 18px;
-    align-self:auto;
-    font-family: 'Source Serif Pro', serif;
+  .boton:hover{
+    box-shadow: 0,0,35px #ddd5d5;
   }
+ 
+ .alinear_flex {
+  padding-top: 150px;
+  display: flex;
+  justify-content: center;
+ }
+
+.nav-link {
+  color: rgb(211, 211, 216);
+  text-decoration:rgb(231, 230, 236);
+}
+.nav-menu {
+  display: flex;
+  margin-right: 40px;
+  list-style: none;
+}
+.nav-menu-item {
+  font-size: 18px;
+  margin: 0 10px;
+  line-height: 80px;
+  text-transform: uppercase;
+  width: max-content;
+}
+
+.nav-menu-link {
+  padding: 8px, 12px;
+  border-radius: 3px;
+}
+
+.nav-menu-link:hover,
+.nav-menu-link_active {
+background-color: #ebeae9;
+transition: 0,5s;
+}
+
+ 
+h1 {
+  color: #edf0e0;
+  text-align: center;
+  font-size: 2.1rem;
+  font-family:'Rubik Iso';
+}
+
+p {
+  color: #f5f1f1;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-family: 'Rubik Iso'
+}
    
-  button:hover {
-    background-color: #bb7045;
-  }
-  
+button:hover {
+  background-color: #33234b;
+}
+
 button {
 border: 0;
 background-image: linear-gradient(150deg,
- #ff9900,
- rgb(207, 6, 6),
- #00DDFF);
-border-radius: 6px;
-color: #fff;
+#eae9eb,
+rgb(207, 6, 6),
+#f1f6f7);
+border-radius: 10px;
+color: #0c0c0c;
 display: flex;
 font-size: 18px;
 padding: 4px;
 cursor: pointer;
 transition: 3s;
-font-family: 'Rubik Iso'
+font-family:'Rubik Iso'
 }
 .icon-fa-solid fa-car-side {
-  background: rgb(243, 9, 9);
+background: rgb(241, 3, 3);
 }
 
 
 button span{
-  background-color: #070000;
+background-color: none;
+padding: 16px 24px;
+border-radius: 6px;
+transition: .3s;
+}
+button:hover span{
+background-color: none;
+}
+
+button:active {
+transform: scale(0.9);
+}
+
+
+/* Estilo de las secciones */
+.section {
+  background-color: #2da2f0f5;
+  border: 1px solid #806f6f;
+  padding: 20px;
+  margin-top: 30px;
+  font-family: 'Gloock', serif;
+}
+
+#datos  {
+  background-color: #1b2a46f5;
+}
+
+/* Estilo de la sección de experiencia */
+#experiencia {
+  background-color: #054ff0;
+  color: rgb(10, 12, 0);
+
+}
+
+/* Estilo de la sección de educación */
+#educación {
+  background-color: #163985;
+  color: #050000;
+}
+
+/* Estilo de la sección de habilidades */
+#habilidades {
+  background-color: #096285;
+  color: #0a0a0a;
+}
+
+
+/* Estilo de la sección de habilidades */
+#idiomas {
+  background-color: #2f81df;
+  color: #0a0a0a;
+  font-family: 'Source Serif Pro', serif;
+}
+#herramientas {
+  background-color: #136abb;
+  color: #060608;
+}
+
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?k5fywc');
+  src:  url('fonts/icomoon.eot?k5fywc#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?k5fywc') format('truetype'),
+    url('fonts/icomoon.woff?k5fywc') format('woff'),
+    url('fonts/icomoon.svg?k5fywc#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+.icon-instagram:before {
+  content: "\ea92";
+}
+.icon-whatsapp:before {
+  content: "\ea93";
+}
+.icon-github:before {
+  content: "\eab0";
+}
+.icon-linkedin:before {
+  content: "\eac9";
+}
+.icon-linkedin2:before {
+  content: "\eaca";
+
+}
+@media (max_width: 768px) {
+  body {
+      padding-top: 40px;
+  }
+  .header {
+      height: 4opx;
+  }
+  nav { 
+    height: 90px;
+    width: 100%;    
+    background: rgb(68, 35, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  label.logo {
+    font-size: 40px;
+    font-weight:bold;
+    color: #f70e0e;
+    line-height: 20px;
+  }
+ 
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    background-color: rgb(68, 56, 56);
+    position: fixed;
+    left: 0;
+    top: 40px;
+    width: 100%;
+    padding: 20px 0;
+    height: calc(100% - 60%);
+    overflow-y: auto;
+    
+    left: 100%;
+    transition: left  0,3s;
+  }
+
+.nav-menu-item {
+    line-height: 10px;
+    
+  }
+  .nav-menu-link:hover,
+  .nav-menu-link_active {
+      background: none;
+      color: rgb(84, 84, 238);
+  }
+ 
+    
+  .nav-menu-link {
+    font-size: 10px;
+    margin: 0 10px;
+    line-height: 80px;
+    text-transform:capitalize;
+    width: max-content;
+  }
+  .nav-menu-link {
+    padding: 8px, 12px;
+    border-radius: 3px;
+  }
+  .nav-menu-link:hover {
+  background-color: #0077B5;
+  transition: 0,5s;
+  }
+
+  
+  h1 {
+    color: #edf0e0;
+    text-align: center;
+    font-size: 2.1rem;
+    font-family:'Rubik Iso';
+  }
+  
+  p {
+    color: #d81313;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-family: 'Rubik Iso'
+  }
+     
+  button:hover {
+    background-color: #33234b;
+  }
+  
+button {
+border: 0;
+background-image: linear-gradient(150deg,
+ #eae9eb,
+ rgb(207, 6, 6),
+ #f1f6f7);
+border-radius: 10px;
+color: #4cec0c;
+display: flex;
+font-size: 18px;
+padding: 4px;
+cursor: pointer;
+transition: 3s;
+font-family:'Rubik Iso'
+}
+.icon-fa-solid fa-car-side {
+  background: rgb(241, 3, 3);
+}
+
+
+button span{
+  background-color: none;
   padding: 16px 24px;
   border-radius: 6px;
   transition: .3s;
@@ -106,64 +429,52 @@ button:hover span{
   
   /* Estilo de las secciones */
   .section {
-    background-color: #db0404f5;
-    border: 1px solid #cccccc;
+    background-color: #2da2f0f5;
+    border: 1px solid #806f6f;
     padding: 20px;
     margin-top: 30px;
     font-family: 'Gloock', serif;
   }
   
+  #Sobre  {
+    background-color: #1b2a46f5;
+  }
+ 
+
+  
   /* Estilo de la sección de experiencia */
-  #experience {
-    background-color: #4d6e8d;
-    color: white;
+  #experiencia {
+    background-color: #054ff0;
+    color: rgb(10, 12, 0);
 
   }
   
   /* Estilo de la sección de educación */
-  #education {
-    background-color: #93c6f3;
-    color: #333;
+  #educación {
+    background-color: #163985;
+    color: #050000;
   }
   
   /* Estilo de la sección de habilidades */
-  #skills {
-    background-color: #095585;
-    color: #333;
+  #habilidades {
+    background-color: #096285;
+    color: #0a0a0a;
   }
   
   
   /* Estilo de la sección de habilidades */
   #idiomas {
-    background-color: #d0d6dd;
-    color: #333;
+    background-color: #2f81df;
+    color: #0a0a0a;
     font-family: 'Source Serif Pro', serif;
   }
   #herramientas {
-    background-color: #0f9dfc;
-    color: #034f91;
+    background-color: #136abb;
+    color: #060608;
   }
-  #habilidades    
-    {
-    background-color: #0044ff;
-    
+ 
+  ::placeholder {
+    color: #2600fd;
+   
   }
-  /* Estilo del pie de página */
-  #footer {
-    background-color: #08298f;
-    color: #333;
-    padding: 20px;
-    text-align: center;
-  }
-  .fa-linkedin {
-    color: #0077B5;
-  }
-  
-  .fa-github {
-    color: #333;
-  }
-  
-  .fa-instagram {
-    color: #C13584;
-  }
-  
+}

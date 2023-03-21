@@ -1,0 +1,167 @@
+body {
+  background: url(.jpg);
+  background-size: 60%;
+  font-family: 'Libre Baskerville', serif;
+}
+
+header {
+    background-color: #c9e1f5;
+    padding: 50px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    color: #e90202;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus {
+    text-decoration: underline;
+    color: #e90202;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.portfolio-link {
+    display: inline-block;
+    border: 2px solid #1d1212;
+    padding: 10px 20px;
+    margin-top: 30px;
+    font-size: 1.5em;
+    color: #09528d;
+    text-decoration: none;
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus {
+    background-color: hsl(0, 89%, 50%);
+    color: #f30c0c;
+    background: url(images/jordi.koalitic\ 2.jpg);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+progress {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #F3F4F6;
+    overflow: hidden;
+  }
+  
+  progress::-webkit-progress-bar {
+    background-color: #F3F4F6;
+  }
+  
+  progress::-webkit-progress-value {
+    background-color: #2F80ED;
+    animation: animate-bar 1s ease-in-out;
+  }
+  
+  @keyframes animate-bar {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 90%;
+    }
+    }
+    body {
+      background: url(.jpg);
+      background-size: 60%;
+      font-family: 'Libre Baskerville', serif;
+    }
+    
+    header {
+        background-color: #c9e1f5;
+        padding: 50px;
+        text-align: center;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    
+    nav ul {
+        list-style: none;
+        display: flex;
+    }
+    
+    nav li {
+        margin: 0 10px;
+    }
+    
+    nav a {
+        color: #e90202;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    
+    nav a:hover,
+    nav a:focus {
+        text-decoration: underline;
+        color: #e90202;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    
+    .portfolio-link {
+        display: inline-block;
+        border: 2px solid #1d1212;
+        padding: 10px 20px;
+        margin-top: 30px;
+        font-size: 1.5em;
+        color: #09528d;
+        text-decoration: none;
+    }
+    
+    .portfolio-link:hover,
+    .portfolio-link:focus {
+        background-color: hsl(0, 89%, 50%);
+        color: #f30c0c;
+        background: url(images/jordi.koalitic\ 2.jpg);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    }
+    
+    progress {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 100%;
+        height: 10px;
+        border-radius: 5px;
+        background-color: #F3F4F6;
+        overflow: hidden;
+      }
+      
+      progress::-webkit-progress-bar {
+        background-color: #F3F4F6;
+      }
+      
+      progress::-webkit-progress-value {
+        background-color: #2F80ED;
+        animation: animate-bar 1s ease-in-out;
+  }
+  
+
