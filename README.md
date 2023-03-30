@@ -1,2 +1,2 @@
-# Calculador.github.io
+# marcemotet.github.io
 proyecto ticmas
